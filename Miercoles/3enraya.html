@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3enraya.css">
+    <script src="3enraya.js"></script>    
+</head>
+<body>
+
+    <div id="main">
+        <h1>Juego 3 en Raya</h1>
+    
+        <br><br>
+        <div class="tablero">
+            <input type="text" id="b1" onclick="pintarBoton1(); juego();" readonly>    
+            <input type="text" id="b2" onclick="pintarBoton2(); juego();" readonly>    
+            <input type="text" id="b3" onclick="pintarBoton3(); juego();" readonly>  
+            <input type="text" id="b4" onclick="pintarBoton4(); juego();" readonly>                
+            <input type="text" id="b5" onclick="pintarBoton5(); juego();" readonly>    
+            <input type="text" id="b6" onclick="pintarBoton6(); juego();" readonly>   
+            <input type="text" id="b7" onclick="pintarBoton7(); juego();" readonly>    
+            <input type="text" id="b8" onclick="pintarBoton8();juego();" readonly>    
+            <input type="text" id="b9" onclick="pintarBoton9();juego();" readonly>
+        </div>
+    
+
+        <!-- Botón Reset-->
+        <button id="boton" onclick="reset()">
+            PANEL NUEVO
+        </button>
+
+        <button id="boton2" onclick="reset()">
+            PARTIDA NUEVA
+        </button>
+        <!-- Botón Empezar -->
+        <button id="botonEmpezar" onclick="">
+            EMPEZAR PARTIDA
+        </button>    
+        <br><br>
+        <!-- Mensaje del ganador -->
+        <p id="print"></p> 
+        <p id="partidas">Partidas jugadas</p>
+     
+    </div>
+</body>
+</html>

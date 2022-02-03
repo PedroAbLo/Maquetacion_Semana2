@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(223, 209, 209);
+}
+
+h1 {
+    margin-top: 50px;
+    color: rgb(11, 96, 255);
+    font-size: 45px;
+}
+
+.tablero{
+    border: 5px solid blue;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    grid-template-rows: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    max-width: 645px;
+}
+#b1{   
+    grid-template-columns: y0/y1 ;
+    grid-template-rows: x0/x1;
+}
+#b2{
+    grid-template-columns: y1/y2 ;
+    grid-template-rows: x0/x1;
+}
+#b3{
+    grid-template-columns: y2/y3 ;
+    grid-template-rows: x0/x1;
+}
+#b4{
+    grid-template-columns: y0/y1 ;
+    grid-template-rows: x1/x2;
+}
+#b5{
+    grid-template-columns: y1/y2 ;
+    grid-template-rows: x1/x2;
+}
+#b6{
+    grid-template-columns: y2/y3 ;
+    grid-template-rows: x1/x2;
+}
+#b7{
+    grid-template-columns: y0/y1 ;
+    grid-template-rows: x2/x3;
+}
+#b8{
+    grid-template-columns: y1/y2 ;
+    grid-template-rows: x2/x3;
+}
+#b9{
+    grid-template-columns: y2/y3 ;
+    grid-template-rows: x2/x3;
+}
+
+#b1, #b2, #b3, #b4, #b5,
+#b6, #b7, #b8, #b9 {
+    width: 200px;
+    height: 200px;
+    margin:0;
+    border: none;
+    font-size: 50px;
+    text-align: center;
+    background-color: transparent;
+}
+#b1,#b2,#b4,#b5,#b7,#b8{
+    border-right: 3px solid blue;
+}
+#b1,#b2,#b3,#b4,#b5,#b6{
+    border-bottom: 3px solid blue;
+}
+
+#boton, #botonEmpezar, #boton2 {
+    box-sizing: border-box;
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid dodgerblue;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#print {
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+
+    color: dodgerblue;
+    font-size: 40px;
+}
+#partidas {
+    font-family: Verdana,
+    Geneva, Tahoma, sans-serif;
+
+color: dodgerblue;
+font-size: 40px;
+}
+
+#main {
+    text-align: center;
+}
